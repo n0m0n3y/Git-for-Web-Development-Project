@@ -1,0 +1,192 @@
+https://codepen.io/JorgeT/pen/vYYwgXN
+
+1. What is Semantic HTML? 
+
+    Semantic HTMl gives our code meaning, so we/computer know what's going on by the tags.
+
+    2. What is HTML used for? 
+
+    HTML is used to make websites. It is the foundation of a website.
+
+    3. What is an attribute and where do we put it? 
+
+    An "attribute" is the element modifier in the start tag. or i should say its something added to the start tag so the computer knows the characteristics of the element.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+
+    The h1 tag is similar to "Title" tag. 
+    It is used to mark a header or header1 so it will be the largest of the h tags as its importance to be seen is 1st.
+    It can be used as many times as you would like but my personal opinion is it should only be used once in your code.
+
+    5. Name two tags that have required attributes
+          <a "href"=""></a>  <img 'src=""' 'alt=""'>
+
+    6. What do we put in the head of our HTML document?
+       <title></title> we put our "title" (the title of our document). 
+       But prior to that I put <!DOCTYPE html> to let the browser know what version of HTML the doc is writin in.
+ 
+    7. What is an id? 
+ 	Id is used for anchoring not styling .its unique so can only be used once per element.
+
+    8. What elements can I add an id to? 
+    All but not at once . and you shouldn't.
+
+    9. How many times can I use the same id on a page? 
+        Id is a unique selector that can only be applied to at most one per element.
+
+    10. What is a class? 
+        A class is another selector. another attribute.
+
+    11. What elements can I add a class to? 
+         All.
+
+    12. How many times can I use the same class on a page? 
+
+     As many times as you want but when it's time to target one it will target ALL.Unless
+there's multiple classes or an ID.
+
+    13. How do I get my link to open in a new tab?
+              _blank
+
+    14. What is the alt attribute used for? 
+         alt is used to specify alt text when like the href site is down or something isn't rendering.
+
+    15. How do I reference an id?
+               #
+
+    16. What is the difference between a section and a div               
+       well a div has no meaning its just a container or DIVider while a section has meaning and signifies a section.
+
+    17. What is CSS used for? 
+        styling your HTML.
+
+    18. How to we select an element? Example - every h2 on the page
+       h2{
+      }
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+                  the only difference is that iD is very specific and unique and only usable once per element, also iDs have greater spesifity and trumps a class. while a class is not unique and can be used as many times as needed. iDs are like anchors and shouldn't be used for styling.
+<ul id="somethingUni"></ul>   <a class="className"></a>
+
+    20. How do we select classes in CSS?
+               .className
+
+
+    21. How do we select a p element with a single class of “human””?
+                 p.human
+
+    22. What is a parent child selector? When would this be useful? 
+           
+         ("parent > child") its used to select all children of the parent.
+          /*replacing "parent" with the parent element to be selected 
+          and "child" with the child element.*/
+
+
+    23. How do you select all links within a div with the class of sidebar?
+    .sidebar a:link
+          
+
+    24. What is a pseudo selector?
+            It is used to define certain state of an element.
+            They will have a colon before them.
+            (I could be wrong but I personally think of them like Methods in js since 
+            they I guess have like a function inside them theres no need to declare or put
+            anything inside them as they work as is. like :hover :link :visited once added to your code 
+            the computers/browser already knows what to do when it sees them. (Again I could be wrong for sure lol) 
+
+
+    25. What do we use the change the spacing between lines?
+        Breaks? <br> or do you mean like "%20"?
+
+    26. What do we use to change the spacing between letters?
+            using CSS? letter-spacing:
+
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+                          Capitalize
+
+
+    28. How do I add a 1px border around my div that is dotted and black?
+      border: 1px dotted black
+
+    29. How do I select everything on the page? 
+         * {
+
+        }
+
+    30. How do I write a comment in CSS?
+   	/* comment here */
+
+    31. How do I find out what file I am in, when I am using the command line? 
+         pwd
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+        ls 
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+         rm *fileName* Because once its gone its KIND OF gone, and takes alot of work to recover
+         with forensic recovery software there is also other methods but in short it will
+         be no easy task to do the recovery as it wont just be in the trash bin BUT unlike what has been
+         stated nothing is ever 100% gone unless you maybe rewrite over the entire hard disk with 0s and still
+         there ALWAYS a chance it can still be recovered.  
+
+    34. Why should I use version control? 
+    With version control multipule ppl on a team or not can 
+    work freely on a project without messing anyone else up.
+    Once done you can merge all the different changes into a common version 
+    of the project.
+
+
+    35. How often should I commit to github?
+    Everytime i make a working change I would commit.
+
+    36. What is the command we would use to push our repo up to github? 
+        git push 
+
+    37. Walk me through Lambda's git flow. 
+    1. create your own version of the repo by forking it.
+    2. You will see your name at the top of the page before
+    the repo name if you did it correctly.
+    3. Now you want to go to settings => collaborators => add collaborators
+    and add your TL.
+    4. cd into the Dir you want your clone to be.
+    5. Next clone your repo git clone /* past link here */
+    6.cd into the repo.
+    7. now create a branch of your own with git checkout -b firstname-lastname. 
+    8 From here on your working on your branch of the repo.
+    when ready add by using git add . then commit with git commit -m 'Add some comments here about what you did'
+    after each git I normally run "git status"  once im ready to save or upload my work to github
+    ill run git push -u origin (here ill put the branch name so for this instant firstname-lastname)
+    once you got your work on github do a pull request click "Branch:Master" it will
+    drop down and you select your branch name then click "new pull request"
+    once on you PR page click the dropdown button base repository
+    and change it to be your forked repo not lambdas repository, Add your Tl to reviewers and submit.
+    we dont mearge our own request after review our TL will merge it.
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+          block will take all width aval. while inline take only the required width.
+          block elements are <p> <h1-6> <ul>, inline elements are your <a> <b> <i> <img>
+
+
+    2. What happens when an element is positioned absolutely? 
+    "An element that is absolutely positioned is taken out of the flow; thus, 
+    other elements are positioned as if it did not exist. 
+    The absolutely positioned element is positioned relative to its nearest positioned ancestor" - stackOverFlow (Illtellyoulater)
+
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+             inline?
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    block         inline      inline-block
+    1. <div>     1. <span>     1. <img>
+    2. <h1-6>    2. <a>
+    3. <nav>
+
+    5. In your own words, explain the box model. What is the fix for the box model? 
+    From my understanding the "Box model" in CSS is the layout so it will consist of the content in the center
+    the padding around that, then the boarder and lastly the margin.
+    The browser sees every element as a box according to CSS basic box model.
+    As far as fix for the box model, im not sure what you mean.
